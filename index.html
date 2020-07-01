@@ -1,0 +1,73 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header id="navbar">
+            <a href="#" class="logo">Good<span>Foods</span></a>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <span class="menuIcon" onclick="manuToggle();"></span>
+        </header>
+        <div class="content">
+            <div class="bannerText" id="slideshowText">
+                <div class="active">
+                    <h2>EAT Helthy<br> Stay Helthy</h2>
+                    <P>Furthermore, healthy food is also very delicious as opposed to popular thinking. Nowadays, kids need to eat healthy food more than ever. We must encourage good eating habits so that our future generations will be healthy and fit.</P>
+                    <a href="#">Read More</a>
+                </div>
+                <div>
+                    <h2>Eat Your<br> Veggies</h2>
+                    <P>Controlling for a baseline week, more healthy (but not fewer unhealthy) products were sold in both nudge conditions, with no difference between the nudge and the nudge + disclosure condition. A majority of customers reported positive
+                        attitudes toward the nudge.</P>
+                    <a href="#">Read More</a>
+                </div>
+                <div>
+                    <h2>Good Food<br>Good Mood</h2>
+                    <P>Research suggests that “healthy” food choices such as eating fruits and vegetables have not only physical but also mental health benefits and might be a long-term investment in future well-being. </P>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="bannerImg" id="slideShow">
+                <img id="img" class="active" src="images/ting-tian-_79ZJS8pV70-unsplash.jpg" alt="">
+                <img id="img" src="images/jannis-brandt-8manzosDSGM-unsplash.jpg" alt="">
+                <img id="img" src="images/anna-pelzer-IGfIGP5ONV0-unsplash.jpg" alt="">
+            </div>
+        </div>
+        <div class="icons">
+            <ul class="sci">
+                <li>
+                    <a href="#"><img src="images/icons8-facebook-24.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/icons8-twitter-24.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/icons8-instagram-24.png" alt=""></a>
+                </li>
+            </ul>
+            <ul class="controls">
+                <li>
+                    <a><img src="images/icons8-left-32.png" alt="" onclick="prevSlide();nextSlideText()"></a>
+                </li>
+                <li>
+                    <a><img src="images/icons8-right-32.png" alt="" onclick="nextSlide();prevSlideText()"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
